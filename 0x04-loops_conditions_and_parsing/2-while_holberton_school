@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 # This script is displaying "Holberton School" 10 times
 
-n = 0
+n=0
 
-while [ $n -lt 10]; do
-	echo "Holberton School"
-	n=$((n+1))
+while [ $n -lt 10 ]; do
+    echo "Holberton School"
+    n=$((n+1))
 done

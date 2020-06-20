@@ -2,7 +2,7 @@
 #  script that gives you information about the holbertonschool file
 
 f = "holbertonschool"
-if [ -e $file ]
+if [ -e $f ]
 then
 	echo "$f file exists"
 	if [ -s $f ]

@@ -1,0 +1,6 @@
+# SSH client configuration
+Host holberton
+    HostName 34.75.8.225
+	Uuser ubuntu
+    Port 22
+	IdentityFile ~/.ssh/holberton

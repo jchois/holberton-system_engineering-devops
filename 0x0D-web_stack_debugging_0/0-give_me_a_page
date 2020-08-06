@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Inicialize apache server
+
+service apache2 start

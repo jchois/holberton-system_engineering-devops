@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# Install your load balancer
+
+sudo apt-get -y update
+sudo apt-get install -y haproxy
+
+echo "
+frontend julianachois
+    bind *:80
+    mode http
+    default_backend backendnodes
+
+backend backendnodes
+    balance roundrobin
+    option forwardfor
+    server web-01 34.75.8.225:80 check
+    server web-02 54.91.28.2:80 check" >> /etc/haproxy/haproxy.cfg
+
+sudo service haproxy restart

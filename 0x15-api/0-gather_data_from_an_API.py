@@ -4,13 +4,12 @@
 import requests
 from sys import argv
 
-
 if __name__ == "__main__":
     # get url
     users = requests.get('https://jsonplaceholder.typicode.com/users/{}'
-                        .format(argv[1]))
+                         .format(argv[1]))
     todo = requests.get('https://jsonplaceholder.typicode.com/todos?userId={}'
-                       .format(argv[1]))
+                        .format(argv[1]))
 
     # convert to json
     user_list = users.json()

@@ -7,7 +7,7 @@ import requests
 
 
 def top_ten(subreddit):
-    """comments"""
+    """top 10 posts"""
     URL = 'http://reddit.com/r/{}/hot.json'
     headers = {"User-Agent": "jchois"}
 
